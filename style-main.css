@@ -1,0 +1,123 @@
+/* main */
+.wrapper-main {
+  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#main-content {
+  display: flex;
+  flex-basis: 50%;
+}
+.left-main {
+  position: relative;
+  bottom: -50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.left-main img {
+  width: 44.5vh;
+  height: fit-content;
+}
+.right-main {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Optional: center horizontally */
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
+  color: #fffdfd;
+  font-weight: 800;
+  margin: 0;
+}
+.right-main p {
+  display: flex;
+  position: relative;
+  top: 10px;
+}
+span::after {
+  content: "Web-Designer";
+  color: rgba(255, 0, 0, 0);
+  font-weight: 800;
+  background-image: linear-gradient(to right, #ff0000, #0004ff);
+  -webkit-background-clip: text;
+  animation: text-alter 7s infinite linear;
+}
+@keyframes text-alter {
+  0% {
+    content: "Youtuber.";
+  }
+  33% {
+    content: "Web-Designer.";
+  }
+  50% {
+    content: "Freelancer.";
+  }
+  100% {
+    content: "Script Writer.";
+  }
+}
+span::before {
+  content: "|";
+  color: rgb(255, 0, 0);
+  font-weight: 800;
+  -webkit-background-clip: text;
+  height: calc(100% + 4px);
+  animation: blinking 1s infinite ease;
+}
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+div.description {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #fffdfd;
+  font-weight: 500;
+  margin-top: 90px;
+  text-align: center; /* Center the text */
+  width: 600px;
+  height: 80px;
+  text-align: start;
+  line-height: calc(100% + 10px);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.links-main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  align-items: flex-start;
+}
+.links-main ul {
+  display: flex;
+}
+.links-main ul li {
+  display: flex;
+  list-style: none;
+  padding: 0 10px;
+}
+.links-main ul li a {
+  text-decoration: none;
+  color: #fff;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  border-width: calc(100% + 15px);
+  transition: 500ms ease;
+  padding: 5px 0;
+}
+.links-main ul li a:hover {
+  color: #ff0000;
+  border-color: #ff0000;
+}

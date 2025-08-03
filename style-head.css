@@ -1,0 +1,116 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Boldonse&family=Orbitron:wght@400..900&family=Playwrite+AU+QLD:wght@100..400&display=swap");
+
+/* Global Reset and Base Styles */
+* {
+  box-sizing: border-box; /* ✅ Prevent overflow from padding/borders */
+}
+
+body {
+  /* ✅ Background image settings */
+  background: #000;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ✅ Prevent horizontal scroll */
+  color: #ffff;
+}
+
+/* Header Styles */
+header {
+  background-image: linear-gradient(
+    to right,
+    hsla(0, 0%, 0%, 0.5),
+    hsla(0, 0%, 20%, 0.502),
+    hsl(0, 0%, 0%)
+  );
+  position: relative; /* ✅ Avoid layout issues from absolute positioning */
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px rgba(139, 139, 139, 0.705);
+}
+
+/* Flex container for logo and nav */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* ✅ Allow wrapping on smaller screens */
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Logo Section */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 0.5vw;
+}
+
+.nav-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+  padding-left: 1vw;
+}
+
+/* Navigation Links */
+.nav-links ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* ✅ Prevent overflow */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  gap: 10px;
+}
+
+.nav-links ul li a {
+  font-size: 1.2em;
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+  border-bottom: 2px solid #fafafa;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.nav-links ul li a:hover {
+  color: red;
+  border-color: red;
+}
+
+/* Active Link */
+.nav-links ul li .active {
+  color: red;
+  border-color: red;
+}
+
+/* Button Styles */
+.nav-button {
+  border: none;
+  border-radius: 15px;
+  padding: 8px 16px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.nav-button:hover {
+  background: rgba(255, 0, 0, 0.1);
+  color: rgb(255, 0, 0);
+}
+/* Main Part */
