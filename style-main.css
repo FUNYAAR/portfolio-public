@@ -121,3 +121,102 @@ div.description {
   color: #ff0000;
   border-color: #ff0000;
 }
+/*Responsiveness  */
+/* 📱 Mobile First: Up to 768px */
+@media screen and (max-width: 768px) {
+  /* Stack main content vertically */
+  .wrapper-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #main-content {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .left-main {
+    bottom: 0;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .left-main img {
+    width: 60vw;
+  }
+
+  .right-main p {
+    font-size: 2rem;
+    top: 0;
+  }
+
+  .description {
+    width: 90%;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    height: auto;
+    text-align: center;
+  }
+
+  .links-main {
+    position: static;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .links-main ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav-logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-button {
+    margin-top: 10px;
+  }
+}
+
+/* 💻 Tablet: 769px to 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .left-main img {
+    width: 35vh;
+  }
+
+  .right-main p {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .nav-links ul {
+    gap: 15px;
+  }
+}
+
+
